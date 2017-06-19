@@ -1,0 +1,14 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<%= link_to 'New Blog', new_blog_path, class: 'btn btn-primary' %>
+
+<% @blogs.each do |blog| %>
+  <ul>
+    <li>
+      <%= blog.name %> - 
+      <%= link_to "#{blog.subdomain}.example.dev", root_url(subdomain: blog.subdomain) %>
+    </li>
+  </ul>
+<% end %>
+
+<%= current_blog %>

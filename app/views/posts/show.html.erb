@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+
+<p>
+  <%= raw @post.content %>
+</p>
+
+<%= link_to 'Blog Home', root_path, class: 'btn btn-primary' %>
+<%= link_to 'Edit Post', edit_blog_post_path(current_blog, @post), class: 'btn btn-info' %>

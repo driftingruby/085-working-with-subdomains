@@ -1,24 +1,5 @@
-# README
+For domains with longer top level domain names like `example.co.uk`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In the `config/environments/production.rb`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    config.action_dispatch.tld_length = 2

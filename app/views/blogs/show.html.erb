@@ -1,0 +1,12 @@
+<h1><%= @blog.name %></h1>
+
+<p>
+  <% current_blog.posts.each do |post| %>
+    <h2><%= link_to post.title, [current_blog, post] %></h2>
+    <p><%= post.content.truncate_words(32).html_safe %></p>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog), class: 'btn btn-primary' %>
+<%= link_to 'Blog Home', root_path, class: 'btn btn-info' %>
+<%= link_to 'Site Home', root_url(subdomain: nil), class: 'btn btn-info' %>

@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: blogs
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  subdomain  :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  subdomain: MyString
+
+two:
+  name: MyString
+  subdomain: MyString
